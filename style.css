@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(34, 32, 32);
+}
+.app{
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar{
+    width: 250px;
+    background-color:rgb(77, 72, 72);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    row-gap: 20px;
+
+}
+.logo{
+    font-weight: 700;
+    font-size: 18px;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.nav button.active{
+    background-color:rgb(58, 58, 58);
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.nav button{
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    padding: 10px 0;
+}
+.content{
+    flex-grow: 1;
+    padding: 20px;
+    
+}
+
+.card{
+
+    background:var(--card-background, rgb(240, 244, 245));
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 14px rgba(12, 24, 44, 0.1);
+
+}
+h2{
+    margin: 12px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px ;
+}
+th{
+    font-weight: 600;
+    
+    
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.row {
+  display: flex;
+  gap: 12px;
+}
+.col{
+    flex: 1;
+}
+
+label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 7px;
+    color: rgb(34, 32, 32);
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 6px;
+    font-size: 14px;
+    color: rgb(34, 32, 32);
+}
+
+textarea{
+    min-height: 60px;
+}
+
+.btn{
+background-color: rgb(78, 178, 198);
+color: white;
+padding: 8px 16px;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+
+}
+.btn.secondary{
+background-color: rgb(4, 247, 243);
+color: rgb(27, 17, 17);
+}
+.block{
+    border: 1px dashed rgb(200, 200, 200);
+    padding: 12px;
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.space-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.small{
+    font-size: 13px;
+    color: rgb(34, 32, 32);
+}
+
+@media(max-width:900px){
+    .sidebar{
+        display: none;
+    }
+    .content{
+        padding: 12px;
+    }
+    .row{
+        flex-direction: column;
+    }
+}   
+.skill-block, .edu-block{
+    border: 1px solid rgb(200, 200, 200);
+    padding: 12px;
+    border-radius: 8px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.skill-list{
+    max-height: 100px;
+    overflow-y: auto;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 6px;
+}
+
+.skill-list div {
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.skill-list div {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.skill-list div:hover {
+  background: white;
+}
+
